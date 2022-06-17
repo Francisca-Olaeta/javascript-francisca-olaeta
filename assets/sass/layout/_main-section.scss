@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 40%;
+    color: $color-text-light;
+    background-color: $color-primary;
+    padding: 2rem 0;
+    border-radius: .3rem;
+
+    &__img {
+        width: 70%;
+    }
+
+    &__product {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    @media (max-width: 576px) {
+        width: 60%;
+        height: 40%;
+
+        &__product {
+            font-size: .7rem;
+            padding: .8rem;
+        }
+    }
+
+}
+
+.price-class {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    font-size: .8rem;
+
+    @media (max-width: 576px) {
+        padding-top: .5rem;
+    }
+}
+
+.controls {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25%;
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__p {
+        display: flex;
+        align-items: center;
+        font-size: .8rem;
+        padding: .3rem;
+        color: $color-text-dark;
+    }
+
+    @media (max-width: 576px) {
+        width: 30%;
+        padding: 2rem;
+    }
+}
+
+.colorClass {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: .3rem;
+}

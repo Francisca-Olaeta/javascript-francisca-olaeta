@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  height: 40%;
+  color: #ffffff;
+  background-color: #75a537;
+  padding: 2rem 0;
+  border-radius: 0.3rem;
+}
+.card__img {
+  width: 70%;
+}
+.card__product {
+  font-size: 1rem;
+  font-weight: 800;
+}
+@media (max-width: 576px) {
+  .card {
+    width: 60%;
+    height: 40%;
+  }
+  .card__product {
+    font-size: 0.7rem;
+    padding: 0.8rem;
+  }
+}
+
+.price-class {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  font-size: 0.8rem;
+}
+@media (max-width: 576px) {
+  .price-class {
+    padding-top: 0.5rem;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 25%;
+  padding-left: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.controls__p {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  color: #393838;
+}
+@media (max-width: 576px) {
+  .controls {
+    width: 30%;
+    padding: 2rem;
+  }
+}
+
+.colorClass {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: white;
+  margin-left: 0.3rem;
+}
+
+.btn {
+  width: 40%;
+  height: 2rem;
+  color: #ffffff;
+  background-color: #e4bd21;
+  border-radius: 0.3rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 992px) {
+  .btn {
+    width: 60%;
+    padding: 0.3rem 0;
+  }
+}
+
+.input {
+  width: 70%;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */

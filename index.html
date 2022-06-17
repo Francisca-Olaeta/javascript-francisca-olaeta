@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculando el total</title>
+</head>
+<body>
+    <section id="container-id" class="container">
+        <div class="card">
+            <img class="card__img" src="assets/img/img-1.png" alt="notebook-gateway">
+            <p class="card__product">Notebook Gateway 14 Fhd</p>
+
+            <input id="quantity" class="input" type="number" min="1" placeholder="Cantidad">
+            <input id="color" class="input" type="text" placeholder="Color">
+            <div id="price-div-id" class="price-class">
+                <p id="price" value="400000">Precio: $400.000</p>
+            </div>
+            <button onclick="calculo()" id="btn-1" class="btn" value="calcular-total">Calcular Total</button>
+        </div>
+
+        <div id="controls-id" class="controls">
+            <p class="controls__p">Total: $<span id="total"></span></p>
+            <p class="controls__p">Cantidad: <span id="finalQuantity" style="padding-left: .3rem;"></span></p>
+            <p class="controls__p">Color: <span id="chooseColor" class="colorClass"></span></p>
+        </div>
+        
+
+    </section>
+
+    <script src="assets/js/script.js">
+
+    </script>
+</body>
+</html>
